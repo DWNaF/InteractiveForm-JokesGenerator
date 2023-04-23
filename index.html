@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Examen WEB</title>
+	<link rel="stylesheet" href="style/style.css">
+
+</head>
+
+	<body>
+		<nav id="navbar" class="flex">
+			<p id="navbar_index">METAHRI Nafaa</p>
+			<ul id="navbar_ul" class="flex">
+				<li class="navbar_li"><a href="#jokes_page">Jokes</a></li>
+				<li class="navbar_li"><a href="#form_page">Form</a></li>
+			</ul>
+		</nav>
+		<div id="jokes_page" class="flex">
+			<div id="jokes_container" class="flex">
+				
+				<div id="search_container" class="flex">
+					<input id="search_input" type="search" placeholder="Enter your keywords !">
+					<button id="search_submit" type="submit">Search</button>
+				</div>
+				
+				<div id="search_index" class="flex">
+					<button id="jokes_prev_page" class="jokes_index_btns" type="submit">Prev</button>
+					<p id="jokes_page_index">1/1</p>
+					<button id="jokes_next_page"class="jokes_index_btns" type="submit">Next</button>
+				</div>
+				
+				<div id="jokes_result_container" class="flex">
+				
+				</div>
+				
+				<div id="keywords_container" class="flex"></div>
+				
+			</div>
+		</div>
+		<div id="form_page" class="flex">
+			<div id="form_page_container" class="flex">
+				<div id="form_page_container_header">
+					<h2>Informations</h2>
+				</div>
+				<div id="form_container" class="flex">
+					<div id="left_form" class="flex">
+						<form id="register_form" class="flex">
+							
+							<label for="lastname" >Nom complet</label>
+							<input class="inputs" type="text" id="fullname" name="fullname" placeholder="Nom prenom..." maxLength="40"> 
+							
+							<div>
+								<label for="firstname">ID</label>
+								<button type="button" id="auto_get_id">auto</button> 
+							</div>
+							<input class="inputs" type="text" id="id" name="id"  placeholder="username..." maxLength="20">
+							
+							<label for="country">Pays</label>
+							<select name="country" id="country">
+								<option selected disabled>Choississez un pays</option>
+								<option value="213">Algérie</option>
+								<option value="32">Belgique</option>
+								<option value="33">France</option>
+							</select>
+		
+							<label for="phone">Téléphone</label>
+							<input class="inputs" type="number" id="phone" name="phone" placeholder="06********" maxLength="10">
+							
+							<label for="mail">Adresse mail (*)</label>
+							<input class="inputs" type="email" id="email" name="mail" pattern=".+@gmail\.com" placeholder="example@gmail.com" size="30" required>
+							
+							<label for="password">Mot de passe (*)</label>
+							<input class="inputs" type="password" id="password" name="password" placeholder="*****" maxLength="20" required>
+						</form>
+					</div>
+					<div id="right_form" class="flex">
+						<div id="card" class="flex">
+							<div id="card_header" class="flex">
+								<p id="card_id">...</p>
+							</div>
+							<div id="card_middle" class="flex">
+							<p id="card_name">...</p>
+							</div>
+							<div id="card_footer" class="flex">
+								<p id="card_phone_country">(+...)</p>
+								<p id="card_phone">...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="form_page_container_footer" class="flex">
+					<button id="submit_btn" type="submit" form="register_form" class="form_buttons">Register</button>
+					<button id="reset_btn" type="reset" form="register_form" class="form_buttons">Reset</button>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/jokes.js"></script>
+		<script src="scripts/form.js"></script>
+	</body>
+</html>	
