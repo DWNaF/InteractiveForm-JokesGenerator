@@ -24,10 +24,6 @@ a {
 
 input:focus{ outline:0;}
 
-body{
-	overflow: hidden;
-}
-
 button{
 	background-color: grey;
 	padding: 4px;
@@ -48,7 +44,7 @@ button:hover{
 #jokes_page{
 	background: #786452;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 
 	display: flex;
 	flex-direction: column;
@@ -65,12 +61,14 @@ button:hover{
 	padding: 1% 0 0 0;
 	width: 70%;
 	min-width: 350px;
-	height: 70%;
+	min-height: 70vh;
 	box-shadow: 1px 5px 14px 0px #443730;
 	justify-content: flex-start;
 	flex-direction: column;
 	row-gap: 15px;
 
+	padding-bottom: 10px;
+	margin: 20px 0;
 }
 
 #search_container{
