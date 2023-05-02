@@ -24,7 +24,16 @@ a {
 
 body {
 	background: #786452;
+	width: 100vw;
+	min-height: 100vh;
+
+	flex-direction: column;
+	justify-content: flex-start !important;
+	gap: 30px;
+
+	padding-top: 50px;
 }
+
 input:focus{ outline:0;}
 
 button{
@@ -44,16 +53,8 @@ button:hover{
 }
 
 /* ########################################################################## JOKES page ####################################################### */
-#jokes_page{
-	width: 100vw;
-	min-height: 100vh;
 
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-}
-
-#jokes_page h1 {
+body h1 {
 	text-align: center;
 	color: white;
 }
@@ -126,5 +127,4 @@ button:hover{
 	#jokes_container{
 		width: 95%;
 	}
-	
 }

@@ -9,33 +9,31 @@
     <title>JokesGenerator</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
-    <div id="jokes_page" class="flex">
-      <h1>Jokes Generator</h1>
-      <div id="jokes_container" class="flex">
-        <div id="search_container" class="flex">
-          <input
-            id="search_input"
-            type="search"
-            placeholder="Enter your keywords !"
-          />
-          <button id="search_submit" type="submit">Search</button>
-        </div>
-
-        <div id="search_index" class="flex">
-          <button id="jokes_prev_page" class="jokes_index_btns" type="submit">
-            Prev
-          </button>
-          <p id="jokes_page_index">1/1</p>
-          <button id="jokes_next_page" class="jokes_index_btns" type="submit">
-            Next
-          </button>
-        </div>
-
-        <div id="jokes_result_container" class="flex"></div>
-
-        <div id="keywords_container" class="flex"></div>
+  <body class="flex">
+    <h1>Jokes Generator</h1>
+    <div id="jokes_container" class="flex">
+      <div id="search_container" class="flex">
+        <input
+          id="search_input"
+          type="search"
+          placeholder="Enter your keywords !"
+        />
+        <button id="search_submit" type="submit">Search</button>
       </div>
+
+      <div id="search_index" class="flex">
+        <button id="jokes_prev_page" class="jokes_index_btns" type="submit">
+          Prev
+        </button>
+        <p id="jokes_page_index">1/1</p>
+        <button id="jokes_next_page" class="jokes_index_btns" type="submit">
+          Next
+        </button>
+      </div>
+
+      <div id="jokes_result_container" class="flex"></div>
+
+      <div id="keywords_container" class="flex"></div>
     </div>
     <script src="scripts/jokes.js"></script>
     <script src="scripts/form.js"></script>
