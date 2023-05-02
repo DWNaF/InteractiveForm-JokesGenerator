@@ -47,25 +47,36 @@ button:hover{
 /* ########################################################################## JOKES page ####################################################### */
 #jokes_page{
 	background: #786452;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+#jokes_page h2 {
+	text-align: center;
+	color: white;
 }
 
 #jokes_container{
 	background:#A5907E;
 	padding: 1% 0 0 0;
-	width: 60%;
+	width: 70%;
+	min-width: 350px;
 	height: 70%;
 	box-shadow: 1px 5px 14px 0px #443730;
 	justify-content: flex-start;
 	flex-direction: column;
 	row-gap: 15px;
+
 }
 
 #search_container{
-	height: 5%;
+	height: 40px;
 	flex-direction: row;
-	column-gap: 5%;
+	column-gap: 20px;
 }
 
 #search_input{
@@ -109,4 +120,11 @@ button:hover{
 
 #keywords_container{
 	height: auto;
+}
+
+@media screen and (max-width: 700px) {
+	#jokes_container{
+		width: 95%;
+	}
+	
 }
